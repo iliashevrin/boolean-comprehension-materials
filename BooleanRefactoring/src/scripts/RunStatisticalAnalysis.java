@@ -1,4 +1,4 @@
-package statisticalanalysis;
+package scripts;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -389,14 +389,6 @@ public class RunStatisticalAnalysis {
 //                // Discard first question
 //                if (Integer.parseInt(parts[index+2]) == 0 || Integer.parseInt(parts[index+6]) == 0) {
 //                	continue;
-//                }
-                
-//                if (TestCategory.REDUCE_NEGATION_COUNT.equals(category)) {
-//                	if ("((A & !B) -> (!C & D))".equals(parts[index+3])) continue;
-//                } else if (TestCategory.REDUCE_NEGATION_COUNT_INCREASE_NEGATION_LEVEL_TRADEOFF.equals(category)) {
-//                	if ("(A -> (!B & !C & (D | E | F)))".equals(parts[index+3])) continue;
-//                	if ("(A <-> ((B & C & D & !E) | (E & !F)))".equals(parts[index+3])) continue;
-//                	if ("(A <-> ((B & C & !D) | (D & !E)))".equals(parts[index+3])) continue;
 //                }
                 
                 if (LocalDate.ofInstant(timestamp, ZoneId.systemDefault()).isBefore(LocalDate.of(2024, 2, 5)) ||

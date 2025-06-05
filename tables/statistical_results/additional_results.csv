@@ -1,0 +1,17 @@
+Category,Original Median,Original Mean,Original Stdv.,Original Correct,Rewritten Median,Rewritten Mean,Rewritten Stdv.,Rewritten Correct,N,Both Correct,Cohen's d,permutation p-value,wilcoxon p-value,correctness p-value,McNemar,
+metrics.OperatorNesting@4cdbe50f_smaller,19.444,21.835,11.617,381,18.493,22.264,13.339,421,471,352,-0.024,0.583,0.45,0,16.327,37
+metrics.OperatorNesting@49e4cb85_toOne,20.147,24.321,15.358,49,11.179,11.286,4.129,67,71,48,0.82,0,0,0,16.2,6
+metrics.NegationCount@3b6eb2ec_smaller,18.775,21.61,11.203,435,17.879,21.124,11.999,437,521,378,0.03,0.427,0.263,0.812,0.034,39
+metrics.NegationCount@1e643faf_toZero,17.448,19.599,9.423,126,13.6,15.558,8.656,131,150,113,0.316,0,0,0.287,0.806,19
+metrics.NegationLevel@880ec60_toOne,17.086,21.248,13.86,168,14.835,18.366,12.026,184,204,161,0.157,0.015,0.001,0.003,8.533,9
+metrics.OperatorCount@39ba5a14_smaller,19.505,23.786,12.96,145,16.582,20.107,12.975,158,169,139,0.201,0,0,0.008,6.76,5
+metrics.ImplicationCount@5b464ce8_toZero,18.692,21.698,12.493,374,16.371,18.518,10.806,416,455,350,0.193,0,0,0,19.6,33
+metrics.IffCount@7e0ea639_toZero,22.28,23.771,10.451,156,27.856,28.835,14.048,162,189,139,-0.289,0,0,0.361,0.9,16
+metrics.AndCount@71be98f5_smaller,19.295,22.361,11.739,404,17.887,21.456,13.164,430,490,366,0.051,0.221,0.095,0.009,6.627,30
+metrics.AndCount@6fadae5d_toZero,17.279,20.43,12.022,170,14.788,16.772,9.325,185,208,157,0.24,0.003,0.002,0.026,5.488,16
+metrics.OrCount@2acf57e3_smaller,18.356,21.762,12.005,216,18.398,21.354,12.935,221,266,190,0.023,0.669,0.135,0.427,0.439,12
+metrics.OrCount@506e6d5e_toZero,18.23,21.771,12.272,197,17.833,21.083,12.37,201,245,172,0.039,0.466,0.173,0.5,0.296,10
+metrics.DistinctOperatorCount@4411d970_smaller,19.201,21.401,11.17,462,18.472,21.743,12.795,497,558,427,-0.02,0.615,0.578,0,11.667,41
+metrics.DistinctOperatorCount@6442b0a6_toOne,21.103,25.18,15.713,43,11.156,11.267,4.144,57,59,42,0.856,0,0,0,12.25,5
+metrics.NegationNesting@edf4efb_nonTrivial,18.742,19.779,9.332,32,13.6,16.328,10.202,27,32,27,0.25,0.154,0.045,0,5,4
+metrics.ImplicationNesting@1554909b_nonTrivial,18.469,21.171,11.007,49,12.545,12.848,4.653,70,75,48,0.696,0,0,0,19.174,5
