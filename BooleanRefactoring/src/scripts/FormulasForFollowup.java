@@ -15,9 +15,7 @@ public class FormulasForFollowup {
 
 	public static void main(String[] args) throws IOException {
 
-        String file1 = args[0];
-
-        Set<Formula> firstFileData = readFirstColumn(file1);
+        Set<Formula> firstFileData = readFirstColumn(args[0]);
         
         FileWriter writer = new FileWriter("formulas_followup.csv");
 

@@ -1,5 +1,4 @@
-package formula;
-
+package scripts;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -13,11 +12,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
-import org.junit.jupiter.api.Test;
-
+import formula.Formula;
+import formula.RefactorTool;
 import language.ParserHelper;
 
-public class RefactorToolTests {
+public class TestRefactorProcedure {
 	
 	private static double sum(Collection<Double> arr) {
 		double sum = 0.0;
@@ -40,7 +39,7 @@ public class RefactorToolTests {
 		return median;
 	}
 	
-	private List<Formula> getMutations(Formula formula) {
+	private static List<Formula> getMutations(Formula formula) {
 		List<Formula> mutations = new ArrayList<>();
 		Random r = new Random();
 		Formula mut1 = new Formula(formula);
@@ -66,12 +65,11 @@ public class RefactorToolTests {
 		return mutations;
 	}
 	
-	@Test
-	void testRefactoringTool() {
+	public static void main(String[] args) {
 		
 		List<String> formulas = new ArrayList<>();
         
-        try (BufferedReader br = new BufferedReader(new FileReader("formulas/single_formulas_final.csv"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(args[0]))) {
             String line;
             line = br.readLine();
             while ((line = br.readLine()) != null) {
@@ -96,7 +94,7 @@ public class RefactorToolTests {
 		// Write to CSV
         try {
         	
-            FileWriter writer = new FileWriter("refactoring_procedure_runtimes.csv");
+            FileWriter writer = new FileWriter("tool_runtimes.csv");
 
             // Write header
             writer.append("Original,Refactoring,Time,Improvement,Original Score,Refactoring Score\n");
@@ -145,7 +143,7 @@ public class RefactorToolTests {
 
 	}
 
-	private Formula recordRefactoring(Map<Formula, Double> times, Map<Formula, Double> score, FileWriter writer, Formula original) throws IOException {
+	private static Formula recordRefactoring(Map<Formula, Double> times, Map<Formula, Double> score, FileWriter writer, Formula original) throws IOException {
 		
 		long start = System.currentTimeMillis();
 		
