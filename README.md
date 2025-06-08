@@ -57,4 +57,4 @@ additional_results.csv - the statistical data according to the additional catego
 ### tool_output
 Contains tool_runtimes.csv as the output of the TestRefactorProcedure script and formulas_followup.csv as the corpus for the followup experiment.
 ## text
-PDF files of the contest and instructions pages of the web interface. See [https://github.com/iliashevrin/boolean-comprehension-frontend](https://github.com/iliashevrin/boolean-comprehension-frontend) for more information.
+PDF files of the consent and instructions pages of the web interface. See [https://github.com/iliashevrin/boolean-comprehension-frontend](https://github.com/iliashevrin/boolean-comprehension-frontend) for more information.
