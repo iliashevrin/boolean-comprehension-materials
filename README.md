@@ -1,7 +1,7 @@
 # boolean-comprehension-materials
 This repository covers the artifacts and supplementary materials described in the paper:
 
-<em>I. Shevrin, S. Maoz, What Properties Affect Boolean Formula Comprehension in Formal Specifications? 2025</em>
+I. Shevrin, S. Maoz. <em>What Properties Affect Boolean Formula Comprehension in Formal Specifications?</em> 2025
 
 ## BooleanRefactoring
 This folder contains a Java project with the source code for the refactoring algorithm and additional scripts. The project requires [antlr](https://www.antlr.org/download.html) library to run.
