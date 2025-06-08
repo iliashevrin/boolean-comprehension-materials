@@ -1,11 +1,14 @@
 # boolean-comprehension-materials
-This repository covers the artifacts and supplementary materials described in the paper "What Properties Affect Boolean Formula Comprehension in Formal Specifications?" (TOSEM 2025). The repository contains the following materials:
+This repository covers the artifacts and supplementary materials described in the paper:
+
+<i>I. Shevrin, S. Maoz, What Properties Affect Boolean Formula Comprehension in Formal Specifications? 2025.</i>
+
 ## BooleanRefactoring
-Java project that contains the source code of the refactoring algorithm and additional scripts. The project requires [antlr](https://www.antlr.org/download.html) library to run.
+This folder contains a Java project with the source code for the refactoring algorithm and additional scripts. The project requires [antlr](https://www.antlr.org/download.html) library to run.
 
 Packages of interest include:
 ### `entrypoints` package
-Includes two main methods as entry points -- FormulaScoreCalculator.java that is the entry point of the formula_score_calculator.jar that computes the complexity score; RefactorProcedure.java that is the entry point of the refactoring_procedure.jara that outputs alternative rewrites of the Boolean formula with a lower complexity score.
+Includes two classes with main methods as entry points: (1) FormulaScoreCalculator.java that is the entry point of the formula_score_calculator.jar that computes the complexity score; (2) RefactorProcedure.java that is the entry point of the refactoring_procedure.jara that outputs alternative rewrites of the Boolean formula with a lower complexity score.
 ### `identities` package
 Includes logic of the Boolean identities applied during the refactoring algorithm.
 ### `language` package
@@ -26,9 +29,13 @@ Example command:
 
 `java -jar refactoring_procedure.jar "((!a & !b & !c)->d)" 3`
 
-The output is NUM_RESULTS formulas sorted by the reading complexity score in ascending order (the best formula is the first):
+The output is NUM_RESULTS formulas with their reading complexity scores, sorted by the score in ascending order (the best formula is the first):
 
-`[(a|b|c|d), !(!a&!b&!c&!d), (!d->(a|b|c))]`
+```
+(a|b|c|d) = 11.42  
+!(!a&!b&!c&!d) = 18.09  
+(!d->(a|b|c)) = 20.38
+```
 
 ### formula_score_calculator.jar
 
